@@ -9,7 +9,7 @@ export default function Home() {
    <>
     <div className="flex flex-row justify-between w-full">
       <div className="text-blue-900 flex ">
-      <p>Bye bye {session?.user?.email}</p>
+      <p>Hello {session?.user?.email}</p>
       
       </div>
       <div className="flex gap-2 items-center h-fit">
