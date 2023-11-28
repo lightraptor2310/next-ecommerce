@@ -32,13 +32,17 @@ const page = () => {
         <thead>
           <tr>
             <td className="border border-slate-600">Product name</td>
+            <td className="border border-slate-600">Price</td>
+            <td className="border border-slate-600">Mô tả</td>
             <td className="border border-slate-600"></td>
           </tr>
         </thead>
         <tbody>
           {products?.map((product, key) => (
             <tr key={key}>
-              <td className="border border-slate-700">{product?.title}</td>
+              <td className="border border-slate-700 text-center">{product?.title}</td>
+              <td className="border border-slate-700">{product?.price}</td>
+              <td className="border border-slate-700">{product?.description}</td>
               <td className="border border-slate-700 flex flex-row gap-2 ">
                 <Button variant="contained" color="success">
                   <Link href={`/products/edit/` + product._id}>edit</Link>
